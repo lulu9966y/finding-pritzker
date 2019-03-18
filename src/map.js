@@ -153,9 +153,9 @@ export default class Map extends React.Component {
       el.style.backgroundImage =
         "url(https://previews.dropbox.com/p/thumb/AAViepXXBFAX03Zg0KlGRMTe-Ov9h9StQgSZEtq0l0O-me3l-J6Xwdv6eNR9GMIN1EL9KtqtHnGu9CL0rtsyByY-7pn8JhnETyIG_MK32ZGxn0T3ETbq2boDqQ9PPUCVqZNazqoNazd1O1RkU7KnAZ3t7KH0eT-W9-giVepTsmXqPuNrAkuIb2R-gzeM1Khvutd3vQPUFu7QUK-dRW-9YVb_dIKCqHMJp2EjVJxmwJmh9_KCwqjZPbjPr-l0w8_ddL4/p.png?size_mode=5)";
       el.style.backgroundSize = "cover";
-      el.style.width = "30px";
-      el.style.height = "30px";
-      el.style.borderRadius = "15px";
+      el.style.width = "40px";
+      el.style.height = "40px";
+      el.style.borderRadius = "20px";
       el.style.border = "1px solid #FAC733";
 
       new mapboxgl.Marker(el).setLngLat(marker.geometry.coordinates).addTo(map);

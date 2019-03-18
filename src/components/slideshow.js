@@ -135,7 +135,7 @@ class Slideshow extends Component {
       <div className="Slideshow" style={slideshow}>
         <div className="SlideshowContainer" style={slideshowContainer}>
           {staticdata.winners.map(cell => (
-            <Link to="/map" ><Card year={cell.year} name={cell.name} image={cell.image} /></Link>
+            <Link to="/map" style={{ color: 'black' }} ><Card year={cell.year} name={cell.name} image={cell.image} /></Link>
           ))}
         </div>
         <div className="Scrollbar" style={scrollbar}>
