@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Menu from "./menu";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Header extends Component {
   render() {
@@ -19,11 +20,13 @@ class Header extends Component {
     };
     return (
       <div className="Header" style={header}>
-        <img
-          src={require("./finding-pritzker logo.png")}
-          height="70"
-          style={logo}
-        />
+        <Link to="/">
+          <img
+            src={require("./finding-pritzker logo.png")}
+            height="70"
+            style={logo}
+          />
+        </Link>
         <Menu />
       </div>
     );

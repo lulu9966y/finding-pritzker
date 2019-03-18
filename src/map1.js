@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./components/header";
 import mapboxgl from "mapbox-gl";
 
-export default class Map extends React.Component {
+export default class Map1 extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -11,7 +11,17 @@ export default class Map extends React.Component {
     mapboxgl.accessToken =
       "pk.eyJ1IjoibHVsdTk5NjZ5IiwiYSI6ImNqczNpMW41NjAydWgzeXF2bHAwbXZqdGoifQ.QpD9CuUbYSpOpzMml6hMnQ";
 
-    var geojson = {
+    const map = new mapboxgl.Map({
+      container: this.mapContainer,
+      style: "mapbox://styles/lulu9966y/cjsp26plx22iq1fqguelizzwa",
+      center: [21, 24],
+      zoom: 1
+    });
+
+    map.addControl(new mapboxgl.FullscreenControl());
+    map.addControl(new mapboxgl.NavigationControl());
+
+    var im = {
       features: [
         {
           type: "Feature",
@@ -28,6 +38,18 @@ export default class Map extends React.Component {
         {
           type: "Feature",
           properties: {
+            title: "Bank of China Tower",
+            location: "Hongkong, China"
+          },
+          geometry: {
+            coordinates: [114.161609, 22.279182],
+            type: "Point"
+          },
+          id: "05bd18d151cd6d17f7d4153f996cb50b"
+        },
+        {
+          type: "Feature",
+          properties: {
             title: "Rock and Roll Hall of Fame",
             location: "Cleveland, USA"
           },
@@ -40,19 +62,7 @@ export default class Map extends React.Component {
         {
           type: "Feature",
           properties: {
-            title: "Bank of China Tower",
-            location: "Hongkong, China"
-          },
-          geometry: {
-            coordinates: [121.498882, 31.240539],
-            type: "Point"
-          },
-          id: "2d88d27918e8474941d6d03e46cbe624"
-        },
-        {
-          type: "Feature",
-          properties: {
-            title: "Deutsches Historisches Museum ",
+            title: "Deutsches Historisches Museum (New) ",
             location: "Berlin, Germany"
           },
           geometry: {
@@ -125,7 +135,7 @@ export default class Map extends React.Component {
           type: "Feature",
           properties: {
             title: "Miho Museum",
-            location: "桃谷, Japan"
+            location: "Kyoto, Japan"
           },
           geometry: {
             coordinates: [136.016122, 34.914896],
@@ -137,55 +147,72 @@ export default class Map extends React.Component {
       type: "FeatureCollection"
     };
 
-    const map = new mapboxgl.Map({
-      container: this.mapContainer,
-      style: "mapbox://styles/lulu9966y/cjsp26plx22iq1fqguelizzwa",
-      center: [21, 24],
-      zoom: 1
+    map.on("load", function(e) {
+      map.addLayer({
+        id: "im",
+        type: "symbol",
+        source: {
+          type: "geojson",
+          data: im
+        },
+        layout: {
+          visibility: "visible",
+          "icon-image": "dot-10",
+          "icon-allow-overlap": true
+        }
+      });
+
+      im.features.forEach(function(marker) {
+        var el = document.createElement("div");
+        el.className = "marker";
+        el.style.backgroundImage =
+          "url(https://previews.dropbox.com/p/thumb/AAViepXXBFAX03Zg0KlGRMTe-Ov9h9StQgSZEtq0l0O-me3l-J6Xwdv6eNR9GMIN1EL9KtqtHnGu9CL0rtsyByY-7pn8JhnETyIG_MK32ZGxn0T3ETbq2boDqQ9PPUCVqZNazqoNazd1O1RkU7KnAZ3t7KH0eT-W9-giVepTsmXqPuNrAkuIb2R-gzeM1Khvutd3vQPUFu7QUK-dRW-9YVb_dIKCqHMJp2EjVJxmwJmh9_KCwqjZPbjPr-l0w8_ddL4/p.png?size_mode=5)";
+        el.style.backgroundSize = "cover";
+        el.style.width = "30px";
+        el.style.height = "30px";
+        el.style.borderRadius = "15px";
+        el.style.border = "1px solid #FAC733";
+
+        var marker = new mapboxgl.Marker(el)
+          .setLngLat(marker.geometry.coordinates)
+          .addTo(map);
+
+      });
+
     });
 
-    map.addControl(new mapboxgl.FullscreenControl());
-    map.addControl(new mapboxgl.NavigationControl());
+    function flyToStore(currentFeature) {
+      map.flyTo({
+        center: currentFeature.geometry.coordinates,
+        zoom: 6
+      });
+    }
 
-    geojson.features.forEach(function(marker) {
-      var el = document.createElement("div");
-      el.className = "marker";
-      el.style.backgroundImage =
-        "url(https://previews.dropbox.com/p/thumb/AAViepXXBFAX03Zg0KlGRMTe-Ov9h9StQgSZEtq0l0O-me3l-J6Xwdv6eNR9GMIN1EL9KtqtHnGu9CL0rtsyByY-7pn8JhnETyIG_MK32ZGxn0T3ETbq2boDqQ9PPUCVqZNazqoNazd1O1RkU7KnAZ3t7KH0eT-W9-giVepTsmXqPuNrAkuIb2R-gzeM1Khvutd3vQPUFu7QUK-dRW-9YVb_dIKCqHMJp2EjVJxmwJmh9_KCwqjZPbjPr-l0w8_ddL4/p.png?size_mode=5)";
-      el.style.backgroundSize = "cover";
-      el.style.width = "40px";
-      el.style.height = "40px";
-      el.style.borderRadius = "20px";
-      el.style.border = "1px solid #FAC733";
-
-      new mapboxgl.Marker(el).setLngLat(marker.geometry.coordinates).addTo(map);
-    });
+    function createPopUp(currentFeature) {
+      var popup = new mapboxgl.Popup({ closeOnClick: false })
+        .setLngLat(currentFeature.geometry.coordinates)
+        .setHTML(
+          "<h3>" +
+            currentFeature.properties.title +
+            "</h3>" +
+            "<h4>" +
+            currentFeature.properties.location +
+            "</h4>"
+        )
+        .addTo(map);
+    }
 
     map.on("click", function(e) {
       var features = map.queryRenderedFeatures(e.point, {
-        layers: ["pritzker"]
+        layers: ["im"]
       });
-
-      if (!features.length) {
-        return;
+      if (features.length) {
+        var clickedPoint = features[0];
+        createPopUp(clickedPoint);
+        flyToStore(clickedPoint);
       }
-
-      var feature = features[0];
-
-      var popup = new mapboxgl.Popup({ offset: [0, -15] })
-        .setLngLat(feature.geometry.coordinates)
-        .setHTML(
-          "<h3>" +
-            feature.properties.title +
-            "</h3><p>" +
-            feature.properties.location +
-            "</p>"
-        )
-        .setLngLat(feature.geometry.coordinates)
-        .addTo(map);
     });
   }
-
   render() {
     let mapContainer = {
       position: "relative",

@@ -7,7 +7,7 @@ class Slideshow extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      index: 0
+      index: 0,
     };
     this.plusSlide = this.plusSlide.bind(this);
     this.minusSlide = this.minusSlide.bind(this);
@@ -45,7 +45,6 @@ class Slideshow extends Component {
       justifyContent: "flex-start",
       transform: ""
     };
-
     let scrollbar = {
       width: "100%",
       height: 45
@@ -82,7 +81,6 @@ class Slideshow extends Component {
       height: 45,
       background: "#BBBBBB"
     };
-
     let dots = {
       position: "absolute",
       bottom: 10,
@@ -135,7 +133,7 @@ class Slideshow extends Component {
       <div className="Slideshow" style={slideshow}>
         <div className="SlideshowContainer" style={slideshowContainer}>
           {staticdata.winners.map(cell => (
-            <Link to="/map" style={{ color: 'black' }} ><Card year={cell.year} name={cell.name} image={cell.image} /></Link>
+            <Link to={"/map" + cell.index} style={{ color: 'black' }} ><Card year={cell.year} name={cell.name} image={cell.image} index={cell.index} /></Link>
           ))}
         </div>
         <div className="Scrollbar" style={scrollbar}>
