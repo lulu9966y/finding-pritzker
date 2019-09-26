@@ -1,0 +1,71 @@
+{
+  "winners": [
+    {
+      "year": "1979",
+      "name": "Philip Johnson",
+      "image": "https://previews.dropbox.com/p/thumb/AAVojIiE5EPTxhrMrmXyeUvhIquKDdqtbD3uZKzSThv6pC6WpRH_UHZpgFRSEGoVOKB59n_K5HbVixwOAqj9i9gpCasNHFzldmdCvEi1ZxEleKKzszDU7EmqHT1e_3qkzoMJlfbyO6ZxXuu6TYmO840aW3PyzV3CtfW7CnxQhJHnhUWYQbV7ykcOAIpzfjC0qJtpc9SEE-7QhpODtmnwZPHyAKRlZDxFB6iLjlJ22sNHQUKXlrLpX2REaiXp9qUeaGY/p.png?size_mode=5",
+      "index": 0
+    },
+    {
+      "year": "1983",
+      "name": "I.M.Pei",
+      "image": "https://previews.dropbox.com/p/thumb/AAViepXXBFAX03Zg0KlGRMTe-Ov9h9StQgSZEtq0l0O-me3l-J6Xwdv6eNR9GMIN1EL9KtqtHnGu9CL0rtsyByY-7pn8JhnETyIG_MK32ZGxn0T3ETbq2boDqQ9PPUCVqZNazqoNazd1O1RkU7KnAZ3t7KH0eT-W9-giVepTsmXqPuNrAkuIb2R-gzeM1Khvutd3vQPUFu7QUK-dRW-9YVb_dIKCqHMJp2EjVJxmwJmh9_KCwqjZPbjPr-l0w8_ddL4/p.png?size_mode=5",
+      "index": 1
+
+    },
+    {
+      "year": "1984",
+      "name": "Richard Meier",
+      "image": "https://previews.dropbox.com/p/thumb/AAUwG8Jp69lg_0I0STL9bgX53XnD-NepdCKVWDDp4dC16vkx08GARMg3W_i5IkDO0ZAo2h68hj5V7_T0gDnNFCZqYl1pfbGiMEz_nBWxaw9s3Llo8Mw5Njrq3hfphcXS1ntyKpDDS60CQf-4ETU7cmE_NLmC9G5Dd4rcwtjeOXPWrnp1ilPAS_zJRxmW6XMl6QELV6ef7eN5IVwBXBqDU3Ph-okwG408Lg8UIIuJWMeuxRZEIhyMR1yASdF7Ruy6fFc/p.png?size_mode=5",
+      "index": 2
+
+    },
+    {
+      "year": "1989",
+      "name": "Frank Gehry",
+      "image": "https://previews.dropbox.com/p/thumb/AAXLfXI9aro9VPHMXz555AmU3FuJL7xcRPKjngU9MVrNjB0MACoaE_fpb-NWzq2Zja87uvI4U90wCC7uf5ZuvkJBd5EKooHAjHIhEnCwLeq9-lYs0DKuBC739YTb_zSdwi1Ar5QKZm5QK-rnAW5zXXIVHv0KKJPXk9fy083U9yZZDCTWyW7jKcLV3ZAIK5CB7gEQERDf6o9LMFMlXpSCPDNOxgmIy4EKIh-ePwXCOxdEbYMxZjZGCMAd2mQ86Kg8PUE/p.png?size_mode=5",
+      "index": 3
+
+    },
+    {
+      "year": "1995",
+      "name": "Tadao Ando",
+      "image": "https://previews.dropbox.com/p/thumb/AAVpB4_TutrO0ttlYkHY83BdTzzfPkglDrBgHWuzuCf6MTJCy42reFdyyDOuYrNTBhyrUjerAxo-jjDtgzrBoKrHjSAhKdBxchKhD6B37oHwj5jlmZ6ahBlFiqwixNXCUKhkmwHbvTFxe-4Cwnwmro8Wve2ko3yXFmr8XB_22JPbg6iwunm1PFggc0hoiEuic0KHi3JZ9Hw5tiZRgFqDudAt5Plnsf53MGO7yHS8WkNx8dqePYQOzq_ITj1aSWjeCpw/p.png?size_mode=5",
+      "index": 4
+    },
+    {
+      "year": "2000",
+      "name": "Rem Koolhaas",
+      "image": "https://previews.dropbox.com/p/thumb/AAXobjxZsSXZFcZVL6puMbFoSeTrWNurxwTOkRbyJIyliOGySGvqWez-qmbBkOej9tk-L1Elf7BYjWuwR5_66Z5S1UQdHKNiGAwA9E2S9bIzkWIuSToPh6hc278bCE-i4eiFFl1Z26BZrFqADPJjvyZ0N7nRarKila3DRhXw8GgJPgcgkuHZdAfjvap1eko1FoE6oSu7LFxEC2lTBEpOJYt-lKXKUl0o2DekF595xveRS4pbPCuQyJC9foO1aIPzUtI/p.png?size_mode=5",
+      "index": 5
+
+    },
+    {
+      "year": "2004",
+      "name": "Zaha Hadid",
+      "image": "https://previews.dropbox.com/p/thumb/AAUsk-8qMsBcvC6PwKyah2U3qEnw_ChlCD3Mi4w8IKYZyvAWxJqp-JT9kWINDQG7RWQtSSib729FKTmS_-PpouCvYTLlkdpurpz5bDht1IVrM9UnZphmjioMKejVXcj6LHlJFlWaaTeJOQcRKzy-UTmw2udNfv_LOCyFsJPWOcxCuzJ22rkJob-ynLVEr3F0UiPyn7nhW8Y-KTiC1rgktaLkgwhTFmX0js8FxYUZm3NUsLTbyhseIL-58nzzBiTkkfM/p.png?size_mode=5",
+      "index": 6
+
+    },
+    {
+      "year": "2009",
+      "name": "Peter Zumthor",
+      "image": "https://previews.dropbox.com/p/thumb/AAXokifDMgf9zJIryC9Ncl-TN97FKlIK5oYfTXA4BFRqh3yrVR7lydSIgOta8Vtb8LiEC3yuZGlhEUgK_Kj7RlIHclRs3hSi696-HV-AgTTPTUHsixsZHu_71XsVuiJHZgD1u_hcX1MjqGHU-a28Vjz9f4eBH1K37xkfUI140Jb-sMV1fjUHSf53oQk79UMB45Il7SBE8zdHQ8-X7MtRd7gGdD17ul1tIARfAynKqVIbNUUpYPbYp8EBYobR51hXnx8/p.png?size_mode=5",
+      "index": 7
+
+    },
+    {
+      "year": "2010",
+      "name": "Kazuyo Sejima and Ryue Nishizawa",
+      "image": "https://previews.dropbox.com/p/thumb/AAXmXKFuB7BwkDy4yoZ_2F_i4Ro1VXs35JCebC7CvHHH9gcD0mwDPv2p9HPCecDzZdwqjKmlgQAyoSX2w4qf5sxN1xeu5Sxwj_lYsqahX3IifuVovMHn2Vld6DVE1BGILacqStMbsAH1w58CNExy5Q6nKL1_iTzfXuNknqwRbcV2aBHErIcfALs-IjR9u0010PpjKnNPn81GSVT2MjiKsCGLhVqK2Me3c9WiaG0tdxmtAsVXVxOjaVGSCDQ2kokFtDc/p.png?size_mode=5",
+      "index": 8
+
+    },
+    {
+      "year": "2012",
+      "name": "Wang Shu",
+      "image": "https://previews.dropbox.com/p/thumb/AAVER-M7JUkPtEMvsAN974y7phXQ-zSBp3TAne79QmJBhnKU4t5YukCQcjbsI_r9O4w7XpkZlLhJCpvZ6_qShMqRxPsHFi3plC5nFbMh3N_Uq9Wt-VLoVlJOSd79F75tmulYQINHjhSQkipx4Lu20hIg-JKxckvk25LIoG7qEhWt0naS5gRlzdmmyKTNTQz86lJYaZ_UxGYxfDI9qSpeIbxrt7Cji0PUsdwc3YAadyyBFlA_r2TDZQgqsM0wjDERaOQ/p.png?size_mode=5",
+      "index": 9
+    }
+  ]
+}

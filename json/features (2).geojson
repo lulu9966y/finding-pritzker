@@ -1,0 +1,50 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "The Glass House",
+        "location": "New Canaan, USA"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.496805,
+          41.146459
+        ],
+        "type": "Point"
+      },
+      "id": "3855945a9f5952efba3a86070c4806b8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "550 Madison Avenue",
+        "location": "New York, USA"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.905673,
+          40.155505
+        ],
+        "type": "Point"
+      },
+      "id": "7269b472389d2e52d3ebe85dca2ec7d1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Seagram Building",
+        "location": "New York, USA"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.971985,
+          40.758417
+        ],
+        "type": "Point"
+      },
+      "id": "d42382d40c89aee7f62368fffdd6e40a"
+    }
+  ],
+  "type": "FeatureCollection"
+}

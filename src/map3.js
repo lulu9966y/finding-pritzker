@@ -136,7 +136,7 @@ export default class Map3 extends React.Component {
         var el = document.createElement("div");
         el.className = "marker";
         el.style.backgroundImage =
-          "url(https://previews.dropbox.com/p/thumb/AAXLfXI9aro9VPHMXz555AmU3FuJL7xcRPKjngU9MVrNjB0MACoaE_fpb-NWzq2Zja87uvI4U90wCC7uf5ZuvkJBd5EKooHAjHIhEnCwLeq9-lYs0DKuBC739YTb_zSdwi1Ar5QKZm5QK-rnAW5zXXIVHv0KKJPXk9fy083U9yZZDCTWyW7jKcLV3ZAIK5CB7gEQERDf6o9LMFMlXpSCPDNOxgmIy4EKIh-ePwXCOxdEbYMxZjZGCMAd2mQ86Kg8PUE/p.png?size_mode=5)";
+          "url(https://previews.dropbox.com/p/thumb/AAluqIj-2n3K9Azh3uH_Ux6a5R4SC2BEyurT3sbKI4KGN40vkntap_1Bd0en_tohq0c8tnEFTVDguYWzG5IqcdRVSIl220Go-OcbO34AX208J5PiCr_oLB4J9SQw4jhhv1ACp1m6Ur1QLvDIMHHxggSaGCbVLoBfOTlpOWG7QVgSs2QY8XxAORd6TP2nsf10grosGb1i4Seu231BkJQvYdynYqQrrnlWB0zIOj0bysNJUppBPzUJsdKiGj6cG4YEYSr1LVNTxZi19cyzDVxGjhI0k-3wtd1Al3saTjHDOKF7hEJtFs8LKqA_kYyQ8u40NWhEHLfYcvzOmsH13u5V0R3H/p.png?fv_content=true&size_mode=5)";
         el.style.backgroundSize = "cover";
         el.style.width = "30px";
         el.style.height = "30px";

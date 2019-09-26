@@ -1,0 +1,95 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": " Art Gallery of Ontario",
+        "location": "Ontario, Canada"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.392765,
+          43.653588
+        ],
+        "type": "Point"
+      },
+      "id": "16becf9ed09ec6406093e44d90ba7084"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": " Massachusetts Institute of Technology - Stata Center",
+        "location": "Cambridge, USA"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.095683,
+          42.358412
+        ],
+        "type": "Point"
+      },
+      "id": "7626bb46db02c0ca523735d4a9272331"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": " Biomuseo",
+        "location": "Panama City"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.544748,
+          8.931898
+        ],
+        "type": "Point"
+      },
+      "id": "79bfd05238207b8c6f791ea4730b2354"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Walt Disney Concert Hall",
+        "location": "LA, USA"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.249904,
+          34.055428
+        ],
+        "type": "Point"
+      },
+      "id": "8bcd5ef63996c1783e2c3763406e8d43"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Hotel Marqués de Riscal",
+        "location": "Elciego, Spain"
+      },
+      "geometry": {
+        "coordinates": [
+          -2.617713,
+          42.511677
+        ],
+        "type": "Point"
+      },
+      "id": "f29f9432e1016d03e52ace631afc5bea"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Dr Chau Chak Wing Building",
+        "location": "Sydney, Australia"
+      },
+      "geometry": {
+        "coordinates": [
+          151.200751,
+          -33.880926
+        ],
+        "type": "Point"
+      },
+      "id": "fcab59f73995e648c4062016224950a9"
+    }
+  ],
+  "type": "FeatureCollection"
+}

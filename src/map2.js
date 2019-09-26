@@ -91,7 +91,7 @@ export default class Map2 extends React.Component {
         var el = document.createElement("div");
         el.className = "marker";
         el.style.backgroundImage =
-          "url(https://previews.dropbox.com/p/thumb/AAUwG8Jp69lg_0I0STL9bgX53XnD-NepdCKVWDDp4dC16vkx08GARMg3W_i5IkDO0ZAo2h68hj5V7_T0gDnNFCZqYl1pfbGiMEz_nBWxaw9s3Llo8Mw5Njrq3hfphcXS1ntyKpDDS60CQf-4ETU7cmE_NLmC9G5Dd4rcwtjeOXPWrnp1ilPAS_zJRxmW6XMl6QELV6ef7eN5IVwBXBqDU3Ph-okwG408Lg8UIIuJWMeuxRZEIhyMR1yASdF7Ruy6fFc/p.png?size_mode=5)";
+          "url(https://previews.dropbox.com/p/thumb/AAm1_wwiJlwxp4-issIO4yiRKMziOT8PyQd9u7ltOayxBeBRWpBr6x6LgfAWfiniZf975A5gjp17wOePBB0vMKrmcsYXfcOvkf9v6ZJdyQu0Kxissu6K9bWxaD2zPHdyGqvM1-8ANtzK-oqgOc0R3ykoIAYsMrkqCNFg2bsUUB7WxGjaqCbnu5w0_eJ_29sRE2BCqu1IxHVRWaTToAF7eYH5O244SzjUSUVTty7sXA0MbhHsBdIIEKeJSBNz6efa4dumjJgGP7F9cYGBrFVKBVcxNBkwCZoNbh6JJetecnmMTFqZDwpDCkDI2UHNptJrfzsk7PKaVtMx_zOF4CUGW4cH/p.png?fv_content=true&size_mode=5)";
         el.style.backgroundSize = "cover";
         el.style.width = "30px";
         el.style.height = "30px";

@@ -1,0 +1,62 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "The Smith House",
+        "location": "Darien, USA"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.470643,
+          41.077513
+        ],
+        "type": "Point"
+      },
+      "id": "219846d458ceb307e2e5da9c8f0e6019"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "The Getty Center",
+        "location": "LA, USA"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.47477,
+          34.076341
+        ],
+        "type": "Point"
+      },
+      "id": "3de23eb667c724a06e555097a95ef9d9"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -73.401218,
+          41.076943
+        ],
+        "type": "Point"
+      },
+      "id": "853122a91a3621ac995b1b178ebd71a9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Parrocchia Dio Padre Misericordioso",
+        "location": "Roma, Itlay"
+      },
+      "geometry": {
+        "coordinates": [
+          12.585447,
+          41.8824
+        ],
+        "type": "Point"
+      },
+      "id": "87ef10a868db30d8e82ddba7d07e1269"
+    }
+  ],
+  "type": "FeatureCollection"
+}

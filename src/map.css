@@ -1,0 +1,16 @@
+#mapMenu a {
+  -webkit-text-fill-color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px 10px;
+  max-width: 120px;
+  background-color: #bbbbbb;
+  border: 1px solid white;
+  text-align: center;
+}
+
+#mapMenu a.active {
+  background-color: #fac733;
+  -webkit-text-fill-color: black;
+}

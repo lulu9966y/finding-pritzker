@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "./components/header";
 import mapboxgl from "mapbox-gl";
+import {Round1} from "./photo-host/Round1.png";
+
 
 export default class Map1 extends React.Component {
   constructor(props) {
@@ -166,7 +168,7 @@ export default class Map1 extends React.Component {
         var el = document.createElement("div");
         el.className = "marker";
         el.style.backgroundImage =
-          "url(https://previews.dropbox.com/p/thumb/AAViepXXBFAX03Zg0KlGRMTe-Ov9h9StQgSZEtq0l0O-me3l-J6Xwdv6eNR9GMIN1EL9KtqtHnGu9CL0rtsyByY-7pn8JhnETyIG_MK32ZGxn0T3ETbq2boDqQ9PPUCVqZNazqoNazd1O1RkU7KnAZ3t7KH0eT-W9-giVepTsmXqPuNrAkuIb2R-gzeM1Khvutd3vQPUFu7QUK-dRW-9YVb_dIKCqHMJp2EjVJxmwJmh9_KCwqjZPbjPr-l0w8_ddL4/p.png?size_mode=5)";
+          "url('https://previews.dropbox.com/p/thumb/AAlI5iQQDC6xGmi4GqH4GDfATylt1Yf4ilorV4hsIZAQXc5QpOQOd5cWVB19ToxDTVxnceS5vVRcjvsFAYhjI-qvzLAdVgvPNCvtqjsGcyehIxtXgqo-ZsF-tScYzSZdde49z9I0PORncvOqZlwBF-MI5_xpUuM7_Ea1skcozprK7mX_JQ-sJ-uPAt8fRN0kFPUwbCqHYjIAZ072yfZq2zun6Y8jNGys541LLOxw4UmZBNDsEFm4Z0VXBkwlrpvbdGtJoQ5QMwl4k0nYU_FjH2oVENRUGHSrTZzgeXri9RgyEHBH_gQa6ThAw2q84V7e94q69FbyBODdJokvnYojpf5t/p.png?fv_content=true&size_mode=5')";
         el.style.backgroundSize = "cover";
         el.style.width = "30px";
         el.style.height = "30px";
